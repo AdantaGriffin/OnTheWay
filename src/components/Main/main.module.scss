@@ -1,0 +1,70 @@
+main{
+    height: 80vh;
+    display: grid;
+    grid-template-rows: 10vh 70vh;
+}
+.buttonsContainer{
+    border: 2px solid black;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    a{
+        border: 2px ridge blue;
+        align-content: center;
+        text-align: center;
+        text-decoration: none;
+        height: 50%;
+        width: 40%;
+        border-radius: 20px;
+        color: white;
+        font-weight: 800;
+        &:hover {
+            cursor: pointer;
+        }
+        img{
+            position: relative;
+            top: 3px;
+        }
+    }
+    .create{
+        background-color: #63d7e9;
+    }
+    .discover{
+        background-color: #e168df;
+    }
+}
+
+.resultsContainer{
+    border: 2px solid black;
+    padding: 5px;
+    .resultCard{
+        border: 2px ridge blue;
+        display: grid;
+        grid-template-columns: 20% 70% 10%;
+        align-items: center;
+        background-color: #63d7e9;
+        color: white;
+        padding: 0 10px;
+        margin-bottom: 5px;
+        .list{
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            li{
+                max-width: 150px;
+                font-size: .9em;
+            }
+        }
+        a{
+            height: 50%;
+            border-radius: 20px;
+            background-color: #e168df;
+            color: white;
+            text-align: center;
+            align-content: center;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+header{
+    border: 2px solid black;
+    height: 15vh;
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    align-content: center;
+    .headerSection{
+        align-content: center;
+        text-align: center;
+        a{
+            color: black;
+            text-decoration: none;
+        }
+    }
+}
