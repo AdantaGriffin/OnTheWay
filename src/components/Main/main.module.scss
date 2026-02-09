@@ -1,51 +1,69 @@
 main{
     height: 80vh;
     display: grid;
-    grid-template-rows: 10vh 70vh;
+    grid-template-rows: 10vh 60vh;
 }
-.buttonsContainer{
-    border: 2px solid black;
-    align-items: center;
-    display: flex;
-    justify-content: space-evenly;
-    a{
-        border: 2px ridge blue;
-        align-content: center;
-        text-align: center;
-        text-decoration: none;
+.mainContainer{
+    height: 80vh;
+    align-content: center;
+    display: grid;
+    grid-template-rows: 20% 20% 60%;
+    .mainQuote{
+        border: 1px solid rgb(70, 60, 136);
+        margin: auto;
         height: 50%;
-        width: 40%;
         border-radius: 20px;
-        color: white;
-        font-weight: 800;
-        &:hover {
-            cursor: pointer;
-        }
-        img{
-            position: relative;
-            top: 3px;
-        }
+        padding: 0 10px;
+        align-content: center;
+        background-color: rgba(59, 145, 221, 0.1);
     }
-    .create{
-        background-color: #63d7e9;
-    }
-    .discover{
-        background-color: #e168df;
-    }
-}
-
-.resultsContainer{
-    border: 2px solid black;
-    padding: 5px;
-    .resultCard{
-        border: 2px ridge blue;
-        display: grid;
-        grid-template-columns: 20% 70% 10%;
+    .buttonsContainer{
         align-items: center;
-        background-color: #63d7e9;
+        display: flex;
+        justify-content: space-evenly;
+        a{
+            border: 2px ridge rgb(70, 60, 136);
+            align-content: center;
+            text-align: center;
+            text-decoration: none;
+            height: 50%;
+            width: 40%;
+            border-radius: 20px;
+            color: white;
+            font-weight: 800;
+            &:hover {
+                cursor: pointer;
+            }
+            img{
+                position: relative;
+                top: 3px;
+            }
+        }
+        .create{
+            background: linear-gradient(#63d7e9, #4734d7);
+            //background-color: rgba(255, 255, 255, 0.1);
+        }
+        .discover{
+            background: linear-gradient(#e677ea, #b624c9);
+            //background-color: rgba(255, 255, 255, 0.1);
+        }
+    }
+
+    .resultsContainer{
+        overflow-x: scroll;
+        align-content: center;
+        padding: 5px;
+    .resultCard{
+        border: 1px solid rgb(70, 60, 136);
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        align-items: center;
+        background-color: rgba(59, 145, 221, 0.1);
         color: white;
         padding: 0 10px;
-        margin-bottom: 5px;
+        width: 90%;
+        margin: 10px auto;
         .list{
             display: flex;
             list-style: none;
@@ -56,15 +74,14 @@ main{
             }
         }
         a{
-            height: 50%;
-            border-radius: 20px;
-            background-color: #e168df;
-            color: white;
             text-align: center;
-            align-content: center;
+            color: white;
             &:hover {
                 cursor: pointer;
             }
         }
+        .start{
+        }
+    }
     }
 }

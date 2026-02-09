@@ -7,7 +7,6 @@ function Header(){
     return (
         <>
             <header>
-                <div className={styles.headerSection}>welcome back, {user}</div>
                 <div className={styles.headerSection}>
                     <NavLink to="/">
                         <h1>On The Way</h1>

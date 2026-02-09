@@ -1,13 +1,14 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 import styles from './footer.module.scss';
 
 function Footer(){
     return (
         <>
             <footer>
-                <a href="#">home</a>
-                <a href="#">exercise</a>
-                <a href="#">profile</a>
+                <NavLink to="/">home</NavLink>
+                <NavLink to="/exercises">exercise</NavLink>
+                <NavLink to="/profile">profile</NavLink>
             </footer>
         </>
     )

@@ -1,14 +1,14 @@
 header{
-    border: 2px solid black;
-    height: 15vh;
-    display: grid;
-    grid-template-columns: 30% 50% 20%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
     align-content: center;
+    padding: 0 20px;
     .headerSection{
         align-content: center;
         text-align: center;
         a{
-            color: black;
+            color: white;
             text-decoration: none;
         }
     }

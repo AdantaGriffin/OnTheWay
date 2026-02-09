@@ -1,4 +1,10 @@
 body{
-    border: 2px solid red;
     box-sizing: border-box;
+    background: radial-gradient(#00042d, #21254d);
+    color: white;
+}
+button{
+    &:hover{
+        cursor: pointer;
+    }
 }

@@ -1,13 +1,12 @@
 footer{
-    height: 5vh;
+    height: 10vh;
     text-align: center;
     align-items: center;
-    border: 1px solid red;
     display: flex;
     justify-content: space-around;
     a{
         text-decoration: none;
-        color: black;
+        color: white;
         &:hover {
             cursor: pointer;
         }
